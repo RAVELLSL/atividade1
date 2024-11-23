@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question h2 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .answers {
+            margin-top: 10px;
+        }
+
+        .answers label {
+            display: block;
+            margin: 5px 0;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 600px;
+            max-height: 80%;
+            background: rgba(255, 255, 255, 1);
+            overflow-y: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .modal-content {
+            padding: 20px;
+        }
+
+        .modal-content h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .modal-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .modal-content ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .close-btn {
+            display: block;
+            text-align: center;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            background-color: #c82333;
+        }
+
+        .score {
+            font-size: 18px;
+            margin: 10px 0;
+            text-align: center;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Exercícios<br><br>Sistema de Informação e Noções Gerais de Informática Básica</h1><br>
+
+        <!-- Questions 1 to 10 -->
+        <div class="question">
+            <h2>1. Sobre Sistemas de Informação, qual das opções abaixo descreve corretamente um Sistema de Apoio à Decisão (SAD)?</h2>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="A"> A) Automatiza atividades diárias, como registros e pagamentos.</label>
+                <label><input type="radio" name="q1" value="B"> B) Organiza dados para auxiliar na tomada de decisão em diferentes níveis de gestão.</label>
+                <label><input type="radio" name="q1" value="C"> C) Gera relatórios simples e consolidados para executivos.</label>
+                <label><input type="radio" name="q1" value="D"> D) Auxilia na resolução de problemas complexos, utilizando modelos matemáticos e análise de dados.</label>
+                <label><input type="radio" name="q1" value="E"> E) Coleta e distribui informações em tempo real para usuários finais.</label>
+            </div>
+        </div>
+
+                <!-- Question 2 -->
+                <div class="question">
+                    <h2>2. Qual é a principal função de um Sistema Operacional (SO)?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q2" value="A"> A) Manter os dados armazenados permanentemente no disco rígido.</label>
+                        <label><input type="radio" name="q2" value="B"> B) Gerenciar hardware e software do computador, proporcionando interface para o usuário.</label>
+                        <label><input type="radio" name="q2" value="C"> C) Executar apenas jogos e programas gráficos.</label>
+                        <label><input type="radio" name="q2" value="D"> D) Transformar dados brutos em relatórios formatados.</label>
+                        <label><input type="radio" name="q2" value="E"> E) Facilitar a comunicação entre dispositivos de entrada e saída.</label>
+                    </div>
+                </div>
+        
+                <!-- Question 3 -->
+                <div class="question">
+                    <h2>3. Em relação às memórias de um sistema computacional, qual das afirmativas é correta?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q3" value="A"> A) A memória RAM é não volátil e armazena dados permanentemente.</label>
+                        <label><input type="radio" name="q3" value="B"> B) O disco rígido é volátil e usado para armazenar dados temporários.</label>
+                        <label><input type="radio" name="q3" value="C"> C) A memória principal armazena temporariamente os dados em processamento.</label>
+                        <label><input type="radio" name="q3" value="D"> D) A memória auxiliar é integrada à CPU para melhorar a performance.</label>
+                        <label><input type="radio" name="q3" value="E"> E) A memória secundária é usada apenas para backups.</label>
+                    </div>
+                </div>
+        
+                <!-- Question 4 -->
+                <div class="question">
+                    <h2>4. Qual dispositivo é considerado tanto de entrada quanto de saída?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q4" value="A"> A) Monitor.</label>
+                        <label><input type="radio" name="q4" value="B"> B) Impressora.</label>
+                        <label><input type="radio" name="q4" value="C"> C) Tela sensível ao toque (Touchscreen).</label>
+                        <label><input type="radio" name="q4" value="D"> D) Scanner.</label>
+                        <label><input type="radio" name="q4" value="E"> E) Teclado.</label>
+                    </div>
+                </div>
+        
+                <!-- Question 5 -->
+                <div class="question">
+                    <h2>5. Na evolução da computação, quem é reconhecida como a primeira programadora da história?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q5" value="A"> A) Ada Lovelace.</label>
+                        <label><input type="radio" name="q5" value="B"> B) Grace Hopper.</label>
+                        <label><input type="radio" name="q5" value="C"> C) Margaret Hamilton.</label>
+                        <label><input type="radio" name="q5" value="D"> D) Alan Turing.</label>
+                        <label><input type="radio" name="q5" value="E"> E) Marie Curie.</label>
+                    </div>
+                </div>
+        
+                <!-- Question 6 -->
+                <div class="question">
+                    <h2>6. Qual é a principal função da ALU (Unidade Lógica e Aritmética) dentro da CPU?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q6" value="A"> A) Gerenciar a memória principal do computador.</label>
+                        <label><input type="radio" name="q6" value="B"> B) Coordenar a comunicação entre diferentes dispositivos de hardware.</label>
+                        <label><input type="radio" name="q6" value="C"> C) Realizar operações matemáticas e lógicas.</label>
+                        <label><input type="radio" name="q6" value="D"> D) Armazenar dados permanentemente.</label>
+                        <label><input type="radio" name="q6" value="E"> E) Proteger os dados durante o processamento.</label>
+                    </div>
+                </div>
+        
+                <!-- Question 7 -->
+                <div class="question">
+                    <h2>7. Em relação à segurança da informação, qual conceito se refere à garantia de que os dados estão disponíveis quando necessário?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q7" value="A"> A) Confidencialidade.</label>
+                        <label><input type="radio" name="q7" value="B"> B) Integridade.</label>
+                        <label><input type="radio" name="q7" value="C"> C) Disponibilidade.</label>
+                        <label><input type="radio" name="q7" value="D"> D) Acessibilidade.</label>
+                        <label><input type="radio" name="q7" value="E"> E) Resiliência.</label>
+                    </div>
+                </div>
+        
+                <!-- Question 8 -->
+                <div class="question">
+                    <h2>8. Qual das opções descreve corretamente um exemplo de dispositivo de entrada?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q8" value="A"> A) Alto-falante.</label>
+                        <label><input type="radio" name="q8" value="B"> B) Webcam.</label>
+                        <label><input type="radio" name="q8" value="C"> C) Impressora.</label>
+                        <label><input type="radio" name="q8" value="D"> D) Monitor.</label>
+                        <label><input type="radio" name="q8" value="E"> E) Projetor.</label>
+                    </div>
+                </div>
+        
+                <!-- Question 9 -->
+                <div class="question">
+                    <h2>9. Qual é o nome da unidade que conecta e gerencia todos os componentes internos de um PC, como CPU, RAM e GPU?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q9" value="A"> A) Fonte de Alimentação.</label>
+                        <label><input type="radio" name="q9" value="B"> B) Placa-Mãe.</label>
+                        <label><input type="radio" name="q9" value="C"> C) BIOS/UEFI.</label>
+                        <label><input type="radio" name="q9" value="D"> D) Chipset.</label>
+                        <label><input type="radio" name="q9" value="E"> E) Unidade Central de Processamento.</label>
+                    </div>
+                </div>
+        
+                <!-- Question 10 -->
+                <div class="question">
+                    <h2>10. Qual das seguintes tecnologias de armazenamento oferece maior velocidade e durabilidade em comparação com um HDD tradicional?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q10" value="A"> A) Unidade de estado sólido (SSD).</label>
+                        <label><input type="radio" name="q10" value="B"> B) Disco óptico.</label>
+                        <label><input type="radio" name="q10" value="C"> C) Memória DRAM.</label>
+                        <label><input type="radio" name="q10" value="D"> D) Fita magnética.</label>
+                        <label><input type="radio" name="q10" value="E"> E) Memória virtual.</label>
+                    </div>
+                </div>
+        
+
+        <button onclick="calculateScore()">Responder</button>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>Gabarito e Explicações</h2>
+            <div class="score" id="score"></div>
+            <ul id="answers-list">
+                <!-- The answers and explanations will be inserted dynamically here -->
+            </ul>
+            <button class="close-btn" onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            q1: "D",
+            q2: "B",
+            q3: "C",
+            q4: "C",
+            q5: "A",
+            q6: "C",
+            q7: "C",
+            q8: "B",
+            q9: "B",
+            q10: "A"
+        };
+
+        const explanations = {
+            q1: "SAD é voltado para análise e suporte a decisões complexas, utilizando modelos matemáticos e análise de dados.",
+            q2: "O SO atua como intermediário entre o hardware e o usuário, gerenciando recursos e facilitando operações.",
+            q3: "A memória principal armazena temporariamente os dados em processamento, sendo volátil.",
+            q4: "Tela sensível ao toque (touchscreen) é tanto dispositivo de entrada quanto de saída.",
+            q5: "Ada Lovelace é considerada a primeira programadora da história, colaborando com Charles Babbage.",
+            q6: "A ALU realiza operações matemáticas e lógicas, sendo um componente essencial da CPU.",
+            q7: "Disponibilidade refere-se a garantir que os dados estejam acessíveis quando necessários.",
+            q8: "Webcams são dispositivos de entrada usados para capturar imagens e vídeos.",
+            q9: "A Placa-Mãe conecta e gerencia todos os componentes internos do computador.",
+            q10: "Unidades SSD oferecem maior velocidade e durabilidade em comparação com HDDs tradicionais."
+        };
+
+        function calculateScore() {
+            let score = 0;
+            const totalQuestions = Object.keys(correctAnswers).length;
+            const answersList = document.getElementById("answers-list");
+            answersList.innerHTML = "";
+
+            for (let key in correctAnswers) {
+                const userAnswer = document.querySelector(`input[name="${key}"]:checked`);
+                if (userAnswer) {
+                    const isCorrect = userAnswer.value === correctAnswers[key];
+                    if (isCorrect) {
+                        score++;
+                    }
+                    answersList.innerHTML += `
+                        <li>
+                            <strong>${key.toUpperCase().replace("Q", "")}. Resposta Correta: ${correctAnswers[key]}</strong> 
+                            - ${explanations[key]}
+                            ${isCorrect ? "✅" : "❌"}
+                        </li>`;
+                } else {
+                    answersList.innerHTML += `
+                        <li>
+                            <strong>${key.toUpperCase().replace("Q", "")}. Resposta Correta: ${correctAnswers[key]}</strong> 
+                            - ${explanations[key]}
+                            ❌ (Não respondida)
+                        </li>`;
+                }
+            }
+
+            document.getElementById("score").innerText = `Você acertou ${score} de ${totalQuestions} questões.`;
+            document.getElementById("modal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
